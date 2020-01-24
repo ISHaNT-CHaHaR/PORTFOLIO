@@ -1,0 +1,26 @@
+
+@media screen and (max-width: 450px){
+    .nav-link{
+        line-height: 5rem;
+    }
+    .hamburger{
+        top: 1.5rem;
+        right:1.5rem;
+
+    }
+}
+
+
+
+@media screen and (max-width: 450px){
+    .sidebar{
+        width: 25rem;
+    }
+    .banner-text h1{
+        font-size: 2rem;
+        margin-top: 20rem;
+        margin-left: 10%;
+    }
+    
+    
+}

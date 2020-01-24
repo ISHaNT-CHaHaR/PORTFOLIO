@@ -14,7 +14,7 @@ select('.hamburger').addEventListener('click',()=>{
 
 /////clicking close close sidebar 
 window.onclick = (e)=>{
-    if(e.target.matches('.active')){
+    if(e.target.matches('active')){
         if(header.classList.contains('active')){
                  header.classList.remove('active');
                  main.classList.remove('active');       
