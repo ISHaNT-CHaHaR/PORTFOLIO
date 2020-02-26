@@ -103,6 +103,7 @@ header::before{
     left: 0;
     bottom: 0;
     background: linear-gradient(to right, #2af598 0%, #009efd 100%); 
+    margin-top: 0;
 }
 
 
@@ -392,15 +393,19 @@ header .active::before{
  
 
 }
+.split{
+  display: flex;
+
+}
  .ps{
    margin-bottom: 40px;
-   display: flex;
-   justify-content: space-between;
-
+   width: 50%;
+   height: 50%;
+   
  }
  .ps a{
   display: inline-block;
-  margin-left: 29rem;
+  
   
    overflow: hidden;
   border-radius: 10%;
@@ -422,5 +427,22 @@ header .active::before{
 }
 .para {
   width: 50%;
-  height: 50%;
+  height: 80%;
+  font-size: 2rem;
+
+}
+
+.para a{
+ 
+  font-size: 1.3rem;
+
+  color: black;
+  text-transform: uppercase;
+  line-height: 8rem;
+  padding: 20px;
+  background-color: #e74c3c;
+  border-radius: 5%;
+  font-size: 3rem;
+  
+  
 }
