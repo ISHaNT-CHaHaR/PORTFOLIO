@@ -350,120 +350,127 @@ header .active::before {
    width: 50%;
    height: 80%;
    font-size: 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .para a {
-   font-size: 1.3rem;
-
+   width: 40%;
+   
+   margin-top: 4rem;
    color: black;
    text-transform: uppercase;
-   line-height: 8rem;
-   padding: 20px;
+   line-height: .2rem;
+   padding: 35px;
    background-color: #e74c3c;
-   border-radius: 5%;
+   border-radius: 2%;
    font-size: 3rem;
 }
 
 /*////////////////////////////////////SKILLS/////////////////////////////////*/
 
-.section .skill-container {
-   top: 150px;
-}
-.skill-container {
-   background: grey;
-   width: 100%;
-   height: 100vh;
-
-   margin: 0;
-   padding: 0;
-}
 .skills {
-   width: 500px;
-   margin: 60px auto;
-   color: white;
+  width: 500px;
+  margin: 60px auto;
+  color: white;
 }
 .skills li {
-   margin: 20px 0;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.skills h1{
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+}
+.skills h3{
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem auto;
 }
 .bar {
-   background: #273c75;
-   display: block;
-   height: 2px;
-   border: 1px solid rgba(0, 0, 0, 0.3);
-   border-radius: 3px;
-   overflow: hidden;
-   box-shadow: 0 0 10px #00a8ff;
+  background: #74b9ff;
+  display: block;
+  height: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+
 }
 
 .bar span {
-   height: 2px;
-   float: left;
-   background: #2187e7;
+  height: 10px;
+  float: left;
+  background: #2187e7;
 }
 
 .java {
-   width: 90%;
-   animation: java 2s;
+  width: 90%;
+  animation: java 2s;
 }
 .kotlin {
-   width: 95%;
-   animation: kotlin 2s;
+  width: 95%;
+  animation: kotlin 2s;
 }
 .C {
-   width: 80%;
-   animation: C 2s;
+  width: 80%;
+  animation: C 2s;
 }
 
 .firebase {
-   width: 100%;
-   animation: firebase 2s;
+  width: 100%;
+  animation: firebase 2s;
 }
 .Photoshop {
-   width: 80%;
-   animation: photoshop 2s;
+  width: 80%;
+  animation: photoshop 2s;
 }
 
 @keyframes java {
-   0% {
-      width: 0;
-   }
-   100% {
-      width: 90%;
-   }
+  0% {
+     width: 0;
+  }
+  100% {
+     width: 90%;
+  }
 }
 
 @keyframes kotlin {
-   0% {
-      width: 0;
-   }
-   100% {
-      width: 95%;
-   }
+  0% {
+     width: 0;
+  }
+  100% {
+     width: 95%;
+  }
 }
 
 @keyframes C {
-   0% {
-      width: 0;
-   }
-   100% {
-      width: 80%;
-   }
+  0% {
+     width: 0;
+  }
+  100% {
+     width: 80%;
+  }
 }
 
 @keyframes firebase {
-   0% {
-      width: 0;
-   }
-   100% {
-      width: 100%;
-   }
+  0% {
+     width: 0;
+  }
+  100% {
+     width: 100%;
+  }
 }
 
 @keyframes photoshop {
-   0% {
-      width: 0;
-   }
-   100% {
-      width: 80%;
-   }
+  0% {
+     width: 0;
+  }
+  100% {
+     width: 80%;
+  }
 }
