@@ -1,5 +1,24 @@
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 420px){
+    body{
+        overflow-x: hidden;
+
+    }
+
+    .zoom-content{
+        width:100%;
+        overflow-x: hidden;
+    }
+
+    .active{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .header-1{
+           overflow-x: hidden;
+           width: 100%;
+           background-size: cover;
+    }
     .nav-link{
         line-height: 5rem;
     }
@@ -8,11 +27,6 @@
         right:1.5rem;
 
     }
-}
-
-
-
-@media screen and (max-width: 450px){
     .sidebar{
         width: 25rem;
     }
@@ -22,5 +36,62 @@
         margin-left: 10%;
     }
     
+    .banner-text h1 span{
+        font-size: 3rem;
+    }
     
+    .split
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .about-s{
+        height:200vh;
+    }
+    .split .ps{
+        width: 100%;
+    }
+    .split .para{
+        width: 100%;
+    }
+
+    .skills{
+        width: 80%;
+        overflow: hidden;
+    }
+    .skills h1{
+        font-size: 3rem;
+    }
+    .skills li h3{
+        font-size: 1.6rem;
+    }
 }
+@media screen and (max-width: 777px){
+
+    .banner-text h1{
+        font-size: 4rem;
+        margin-top: 20rem;
+        margin-left: 10%;
+    }
+    
+    .banner-text h1 span{
+        font-size: 6rem;
+    }
+
+
+
+    .split
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .about-s{
+        height:200vh;
+    }
+
+}
+
