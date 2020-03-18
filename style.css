@@ -11,7 +11,7 @@ html {
    font-size: 10px;
 }
 body {
-   background-color: #485460;
+   background-color: #2d3436;
    margin: 0;
    padding: 0;
 }
@@ -19,6 +19,7 @@ body {
 section {
    width: 100%;
    height: 100vh;
+   
 }
 
 a {
@@ -36,7 +37,7 @@ a {
 
 .hamburger i {
    font-size: 4rem;
-   background-color: #2d3436;
+   background-color: #f0932b ;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -74,7 +75,7 @@ header::before {
    padding: 1.6rem;
    z-index: 1000;
    transform: translateX(-100%);
-   transition: transform 0.6s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+   transition: transform 0.6s ease-in-out;
 }
 
 .nav-list {
@@ -306,6 +307,10 @@ header .active::before {
 /*//////////////////////////KeyFrames/////////////////////////////////////////*/
 
 /* //////////////////////////////ABOUT////////////////////////////////////*/
+.about-s{
+   -webkit-clip-path: polygon(50% 100%, 0 90%, 0 0, 100% 0, 100% 90%);
+
+}
 .about {
    overflow: hidden;
    text-align: center;
@@ -340,27 +345,28 @@ header .active::before {
    height: 350px;
 }
 .ps p {
-   display: inline-block;
+   box-sizing: border-box;
    margin-top: 30px;
    overflow: hidden;
    font-size: 2rem;
    font-weight: 700;
+   align-self: center;
 }
 .para {
-   width: 50%;
+   width: 40%;
    height: 80%;
    font-size: 2rem;
    display: flex;
    flex-direction: column;
-   justify-content: center;
 }
 
 .para a {
-   width: 25rem;
+   width: 20rem;
 
    margin-top: 4rem;
    align-self: center;
-   color: black;
+   color: BLAck;
+   font-weight: 600;
    text-transform: uppercase;
    line-height: 0.2rem;
    padding: 3rem;
@@ -370,12 +376,18 @@ header .active::before {
 }
 
 /*////////////////////////////////////SKILLS/////////////////////////////////*/
-
+.skill-s {
+   background: #2d3436;
+   height: 73vh;
+   
+   -webkit-clip-path: polygon(50% 85%, 0 100%, 0 0, 100% 0, 100% 100%);
+   
+}
 .skills {
    width: 500px;
    margin: 60px auto;
    color: white;
-   position: relative;
+   position: inherit;
 }
 .skills li {
    margin: 20px 0;
@@ -383,7 +395,9 @@ header .active::before {
 }
 
 .skills h1 {
-   font-size: 6rem;
+   display: inline-block;
+   align-self: center;
+   font-size: 5rem;
    text-transform: uppercase;
    text-align: center;
    color: white;
@@ -475,4 +489,43 @@ header .active::before {
    100% {
       width: 80%;
    }
+}
+
+.portfolio {
+   background: #dfe6e9;
+   display: flex;
+   justify-content: center;
+   
+   -webkit-clip-path: polygon(49% 100%, 0 91%, 0 14%, 100% 0, 99% 90%);}
+   
+
+.heading h1 {
+   margin-top: 15rem;
+   display: inline-block;
+
+   font-size: 5rem;
+   text-transform: uppercase;
+   text-align: center;
+   color: black;
+   font-weight: bolder;
+   letter-spacing: 5px;
+}
+
+.achievements {
+   background: #2d3436;
+   display: flex;
+   justify-content: center;
+   -webkit-clip-path: polygon(50% 100%, 0 86%, 0 0, 100% 0, 100% 86%);
+}
+
+.a-heading h1 {
+   margin-top: 5rem;
+   display: inline-block;
+
+   font-size: 5rem;
+   text-transform: uppercase;
+   text-align: center;
+   color: white;
+   font-weight: bolder;
+   letter-spacing: 5px;
 }
