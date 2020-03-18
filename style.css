@@ -173,7 +173,7 @@ header .active::before {
 }
 
 .active .zoom-content {
-   transform: translate3d(0, 0, -50rem);
+   transform: translate3d(0, 0, -80rem);
 }
 
 /*///////////////////////////////header///////////////////////////////////////////*/
