@@ -4,6 +4,9 @@
         overflow-x: hidden;
 
     }
+    .about h1{
+        font-size: 4rem;
+    }
 
     .zoom-content{
         width:100%;
