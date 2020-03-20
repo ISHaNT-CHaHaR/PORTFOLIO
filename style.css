@@ -563,7 +563,8 @@ header .active::before {
 .achievements {
    background: #2d3436;
    display: flex;
-   justify-content: center;
+   align-items: center;
+   flex-direction: column;
   
 }
 
