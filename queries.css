@@ -65,7 +65,7 @@
    .skills li h3 {
       font-size: 1.6rem;
    }
-   card {
+   .card {
       width: 300px;
       height: 400px;
       margin: 1rem;
