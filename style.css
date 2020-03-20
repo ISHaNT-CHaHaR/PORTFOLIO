@@ -172,7 +172,7 @@ header .active::before {
 }
 
 .active .zoom-content {
-   transform: translate3d(0, 0, -80rem);
+   transform: translate3d(0, 0, -10rem);
 }
 
 /*///////////////////////////////header///////////////////////////////////////////*/
@@ -350,7 +350,7 @@ header .active::before {
    font-weight: 700;
    align-self: center;
 }
-.para {
+.split .para {
    width: 40%;
    height: 80%;
    font-size: 2rem;
@@ -564,7 +564,7 @@ header .active::before {
    background: #2d3436;
    display: flex;
    justify-content: center;
-   -webkit-clip-path: polygon(50% 100%, 0 86%, 0 0, 100% 0, 100% 86%);
+  
 }
 
 .a-heading h1 {
@@ -577,4 +577,39 @@ header .active::before {
    color: white;
    font-weight: bolder;
    letter-spacing: 5px;
+}
+/*///////////////////////////////Contact SEction//////////////////*/
+
+.contact{
+   background:#dfe6e9 ;
+   display: flex;
+   justify-content: center;
+}
+
+
+.contact h1 {
+   
+   display: inline-block;
+
+   font-size: 5rem;
+   text-transform: uppercase;
+   text-align: center;
+   color: black;
+   font-weight: bolder;
+   letter-spacing: 5px;
+}
+
+/*//////////////////////////////footer////////////////////////////////*/
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #2d3436;
+   width: 100%;
+   height: 20vh;
+
+}
+footer h1{
+   color: white;
+
 }
