@@ -46,7 +46,7 @@
       align-items: center;
    }
    .about-s {
-      height: 100vh;
+      height: 200vh;
    }
    .split .para {
       height: 80%;
@@ -71,6 +71,15 @@
    .card .content {
       width: 300px;
    }
+
+
+   .contact h1{
+      font-size: 3rem;
+   }
+   .form{
+      width: 90%;
+      height: 70%;
+   }
 }
 
 /*////////////////////////////////////////////777    /////////////////*/
@@ -91,14 +100,14 @@
       align-items: center;
    }
    .split .para {
-      width: 80%;
+      width: 100%;
       height: 80%;
       font-size: 2rem;
       display: flex;
       flex-direction: column;
    }
    .about-s {
-      height: 130vh;
+      height: 200vh;
    }
 
    .swiper-slide {
@@ -111,5 +120,8 @@
    }
    .card .content {
       width: 300px;
+   }
+   .form{
+      width: 350px;
    }
 }
