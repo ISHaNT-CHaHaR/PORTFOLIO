@@ -46,7 +46,7 @@
       align-items: center;
    }
    .about-s {
-      height: 200vh;
+      height: 120vh;
    }
    .split .para {
       height: 80%;
@@ -107,7 +107,7 @@
       flex-direction: column;
    }
    .about-s {
-      height: 200vh;
+      height: 150vh;
    }
 
    .swiper-slide {
