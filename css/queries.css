@@ -72,11 +72,10 @@
       width: 300px;
    }
 
-
-   .contact h1{
+   .contact h1 {
       font-size: 3rem;
    }
-   .form{
+   .form {
       width: 90%;
       height: 70%;
    }
@@ -121,7 +120,40 @@
    .card .content {
       width: 300px;
    }
-   .form{
+   .form {
       width: 350px;
+   }
+}
+
+/* -------------------------
+   ----- Media Queries ----- 
+   ------------------------- */
+@media screen and (max-width: 1020px) {
+   .timeline ul li .content {
+      width: 41vw;
+   }
+
+   .timeline ul li:nth-child(even) .content {
+      left: calc(-41vw - 45px);
+   }
+}
+@media screen and (max-width: 700px) {
+   .timeline ul li {
+      margin-left: 20px;
+   }
+   .timeline ul li .content {
+      width: calc(100vw - 100px);
+   }
+   .timeline ul li .content h2 {
+      text-align: initial;
+   }
+   .timeline ul li:nth-child(even) .content {
+      left: 45px;
+      background: #67cc8e;
+      background: -webkit-linear-gradient(-45deg, #56bc83, #67cc8e);
+      background: linear-gradient(-45deg, #56bc83, #67cc8e);
+   }
+   .timeline ul li:nth-child(even) .content:before {
+      left: -33px;
    }
 }

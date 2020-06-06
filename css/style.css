@@ -193,7 +193,7 @@ header .active::before {
 }
 
 .banner-text h1 span {
-   color: #ff3838;
+   color: #f0932b;
    font-size: 7rem;
 }
 
@@ -369,7 +369,7 @@ header .active::before {
    text-transform: uppercase;
    line-height: 0.2rem;
    padding: 3rem;
-   background-color: #e74c3c;
+   background-color: #f0932b;
    border-radius: 10px;
    font-size: 2rem;
 }
@@ -394,12 +394,12 @@ header .active::before {
 
 .skills h1 {
    display: inline-block;
-   align-self: center;
+   margin-bottom: 30px;
    font-size: 5rem;
    text-transform: uppercase;
-   text-align: center;
+   margin-left: 20%;
    color: white;
-   font-weight: bolder;
+
    letter-spacing: 5px;
 }
 .skills h3 {
@@ -542,7 +542,7 @@ header .active::before {
    display: flex;
    justify-content: center;
    align-items: center;
-   background: rgba(0, 0, 0, 0.9);
+   background: linear-gradient(to right, #0c2461, #079992);
 }
 
 .card .slider-text h3 {
@@ -559,25 +559,107 @@ header .active::before {
    font-weight: 600;
    font-size: 1.2rem;
 }
+.card .content p {
+   font-size: 2rem;
+}
 /*///////////////////////////////////achievements//////////////////////*/
-.achievements {
-   background: #2d3436;
+
+.timeline {
+   color: #fff;
+   height: 100%;
    display: flex;
-   align-items: center;
    flex-direction: column;
 }
 
-.a-heading h1 {
-   margin-top: 5rem;
-   display: inline-block;
-
+.activities {
+   display: flex;
+   justify-content: center;
+}
+.timeline h1,
+.timeline ul li .content h2 {
+   text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
+}
+.timeline h1 {
+   padding-top: 70px;
    font-size: 5rem;
-   text-transform: uppercase;
    text-align: center;
-   color: white;
-   font-weight: bolder;
+   display: inline-block;
+   align-self: center;
    letter-spacing: 5px;
 }
+.timeline ul {
+   padding: 50px 0;
+}
+.timeline ul li {
+   background: white;
+   position: relative;
+   margin: 0 auto;
+   width: 5px;
+   padding-bottom: 40px;
+   list-style-type: none;
+}
+.timeline ul li:last-child {
+   padding-bottom: 7px;
+}
+.timeline ul li:before {
+   content: '';
+   background: #faf8eb;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   width: 20px;
+   height: 20px;
+   border: 3px solid white;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+}
+.timeline ul li .hidden {
+   opacity: 0;
+}
+.timeline ul li .content {
+   background: white;
+   position: relative;
+   top: 7px;
+   width: 450px;
+   padding: 20px;
+   height: 200px;
+}
+.timeline ul li .content h2 {
+   color: #fff;
+   padding-bottom: 10px;
+   text-align: center;
+   font-size: 2rem;
+}
+.timeline ul li .content p {
+   text-align: center;
+   font-size: 1.5rem;
+}
+.timeline ul li .content:before {
+   content: '';
+   background: white;
+   position: absolute;
+   top: 0px;
+   width: 38px;
+   height: 5px;
+}
+.timeline ul li:nth-child(odd) .content {
+   left: 50px;
+   background: linear-gradient(to right, #0c2461, #079992);
+}
+.timeline ul li:nth-child(odd) .content:before {
+   left: -38px;
+}
+.timeline ul li:nth-child(even) .content {
+   left: calc(-450px - 45px);
+   background: linear-gradient(to left, #0c2461, #079992);
+}
+.timeline ul li:nth-child(even) .content:before {
+   right: -38px;
+}
+
 /*///////////////////////////////Contact SEction//////////////////*/
 
 .contact {
@@ -686,17 +768,11 @@ header .active::before {
    align-self: center;
    position: absolute;
    transform: translate(-30%, -5%);
-   
 }
 .social-links a i:active,
-.social-links a i:hover{
+.social-links a i:hover {
    color: tomato;
 }
-
-
-
-
-
 
 /*//////////////////////////////footer////////////////////////////////*/
 footer {
@@ -710,3 +786,10 @@ footer {
 footer h1 {
    color: white;
 }
+
+
+
+
+
+
+
