@@ -1,7 +1,8 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 400px) {
    body {
       overflow-x: hidden;
    }
+
    .about h1 {
       font-size: 4rem;
    }
@@ -46,17 +47,27 @@
       align-items: center;
    }
    .about-s {
-      height: 120vh;
+      height: 100vh;
+      -webkit-clip-path: none;
+      overflow-x: hidden;
+   }
+   .about {
+      padding: 20px;
+      margin-bottom: 10%;
+      height: min-content;
    }
    .split .para {
       height: 80%;
       font-size: 2rem;
    }
-
+   .skills-s {
+      height: 100vh;
+   }
    .skills {
       width: 80%;
       overflow: hidden;
    }
+
    .skills h1 {
       font-size: 3rem;
    }
@@ -79,6 +90,27 @@
       width: 90%;
       height: 70%;
    }
+
+   .ps {
+      width: 100%;
+   }
+   .ps p {
+      content: '';
+   }
+   .timeline ul li .content p {
+      font-size: 1.2rem;
+   }
+   .portfolio .heading {
+      margin-top: 10%;
+   }
+   .portfolio {
+      height: 100vh;
+      -webkit-clip-path: none;
+      overflow-x: hidden;
+   }
+   .portfolio .swiper-container {
+      margin-bottom: 10%;
+   }
 }
 
 /*////////////////////////////////////////////777    /////////////////*/
@@ -92,7 +124,9 @@
    .banner-text h1 span {
       font-size: 6rem;
    }
-
+   .hamburger i {
+      font-size: 5rem;
+   }
    .split {
       display: flex;
       flex-direction: column;
@@ -128,13 +162,28 @@
 /* -------------------------
    ----- Media Queries ----- 
    ------------------------- */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1026px) {
    .timeline ul li .content {
       width: 41vw;
    }
 
    .timeline ul li:nth-child(even) .content {
       left: calc(-41vw - 45px);
+   }
+   .about-s {
+      height: 100vh;
+   }
+   .portfolio {
+      height: 100vh;
+   }
+   .card .content p {
+      font-size: 1.3rem;
+   }
+   .hamburger i {
+      font-size: 6rem;
+   }
+   .contact {
+      height: 100%;
    }
 }
 @media screen and (max-width: 700px) {
@@ -149,11 +198,12 @@
    }
    .timeline ul li:nth-child(even) .content {
       left: 45px;
-      background: #67cc8e;
-      background: -webkit-linear-gradient(-45deg, #56bc83, #67cc8e);
-      background: linear-gradient(-45deg, #56bc83, #67cc8e);
+      background: linear-gradient(to left, #0c2461, #079992);
    }
    .timeline ul li:nth-child(even) .content:before {
       left: -33px;
+   }
+   .about-s {
+      height: 100vh;
    }
 }
