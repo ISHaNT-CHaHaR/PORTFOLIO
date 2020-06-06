@@ -6,9 +6,10 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Dheeraj's Portfolio</title>
+      <title>Dheeraj Rao</title>
       <link rel="stylesheet" href="./css/queries.css" />
-
+      <link rel="stylesheet" href="./css/aos.scss" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
@@ -36,14 +37,15 @@
                      <i class="fas fa-address-card"></i>ABOUT
                   </a>
                </li>
-               <li class="nav-item">
-                  <a href="#skill-s" class="nav-link">
-                     <i class="fas fa-blog"></i>skills
-                  </a>
-               </li>
+
                <li class="nav-item">
                   <a href="#portfolio" class="nav-link">
                      <i class="fas fa-briefcase"></i>PORTFOLIO
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a href="#timeline" class="nav-link">
+                     <i class="fas fa-blog"></i>ACTIVITIES
                   </a>
                </li>
                <li class="nav-item">
@@ -54,15 +56,20 @@
             </ul>
             <div class="social-media">
                <a href="#" class="icon-link">
-                  <i class="fab fa-instagram"></i>
-               </a>
-               <a href="#" class="icon-link">
                   <i class="fab fa-twitter-square"></i>
                </a>
-               <a href="#" class="icon-link">
+               <a
+                  href="https://www.linkedin.com/in/dheeraj-b926ab184/"
+                  target="blank"
+                  class="icon-link"
+               >
                   <i class="fab fa-linkedin"></i>
                </a>
-               <a href="#" class="icon-link">
+               <a
+                  href="https://github.com/Dheeraj0052"
+                  target="blank"
+                  class="icon-link"
+               >
                   <i class="fab fa-github-square"></i>
                </a>
             </div>
@@ -76,7 +83,9 @@
                   <!-- header animate -->
                   <div class="banner">
                      <h1>
-                        HELLO, <span>I'M DHEERAJ</span> <br />
+                        HELLO,
+                        <span data-aos="zoom-out-down" data-aos-duration="3000"
+                        >I'M DHEERAJ</span> <br />
                         I am a Full-Stack Android Developer.
                      </h1>
                   </div>
@@ -101,9 +110,11 @@
                   <h1 class="nav-item title">About Me</h1>
                   <div class="split">
                      <div class="ps">
-                        <a href="#"><img src="dheeraj.jpeg" alt="image" /></a>
+                        <a data-aos="fade-up-right" href="#"
+                           ><img src="dheeraj.jpeg" alt="image"
+                        /></a>
                      </div>
-                     <div class="para">
+                     <div data-aos="fade-up-left" class="para">
                         <p>
                            Lorem ipsum dolor sit amet consectetur adipisicing
                            elit. Voluptate nam minus tenetur inventore nulla
@@ -114,7 +125,12 @@
                            sequi odio fugiat dicta. Inventore ipsam aliquam
                            doloribus tempore? Suscipit, velit!
                         </p>
-                        <a href="#">PORTFOLIO</a>
+                        <a
+                           data-aos="flip-up"
+                           data-aos-duration="1000"
+                           href="#portfolio"
+                           >PORTFOLIO</a
+                        >
                      </div>
                   </div>
                </div>
@@ -123,23 +139,23 @@
             <section class="skill-s" id="skill-s">
                <div class="skills">
                   <h1 class="nav-item">My skills</h1>
-                  <li>
+                  <li data-aos="zoom-in-left">
                      <h3>JAVA</h3>
                      <span class="bar"><span class="java"></span></span>
                   </li>
-                  <li>
+                  <li data-aos="zoom-in-right">
                      <h3>kotlin</h3>
                      <span class="bar"><span class="kotlin"></span></span>
                   </li>
-                  <li>
+                  <li data-aos="zoom-in-left">
                      <h3>firebase</h3>
                      <span class="bar"><span class="firebase"></span></span>
                   </li>
-                  <li>
+                  <li data-aos="zoom-in-right">
                      <h3>C++</h3>
                      <span class="bar"><span class="C"></span></span>
                   </li>
-                  <li>
+                  <li data-aos="zoom-in-left">
                      <h3>Photoshop</h3>
                      <span class="bar"><span class="Photoshop"></span></span>
                   </li>
@@ -247,7 +263,7 @@
                </div>
             </section>
 
-            <section class="timeline">
+            <section class="timeline" id="timeline">
                <div class="activities">
                   <h1 class="nav-item">ACTIVITIES</h1>
                </div>
@@ -359,7 +375,7 @@
                <div class="a-heading">
                   <h1 class="nav-item">Contact me</h1>
                </div>
-               <div class="form">
+               <div data-aos="zoom-in-up" class="form">
                   <h3>Liked my work? Wanna connect?</h3>
                   <div class="input">
                      <div class="inputBox">
@@ -377,15 +393,20 @@
                   <div class="connect-links">
                      <div class="social-links">
                         <a href="#" class="icon-link">
-                           <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="icon-link">
                            <i class="fab fa-twitter-square"></i>
                         </a>
-                        <a href="#" class="icon-link">
+                        <a
+                           href="https://www.linkedin.com/in/dheeraj-b926ab184/"
+                           target="blank"
+                           class="icon-link"
+                        >
                            <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="icon-link">
+                        <a
+                           href="https://github.com/Dheeraj0052"
+                           target="blank"
+                           class="icon-link"
+                        >
                            <i class="fab fa-github-square"></i>
                         </a>
                      </div>
@@ -402,8 +423,9 @@
       <script src="./js/swiper.min.js"></script>
       <script src="./css/script.js"></script>
       <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
+      <script src="./js/aos.js"></script>
       <script src="js/index.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
          var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',
@@ -420,6 +442,27 @@
             pagination: {
                el: '.swiper-pagination',
             },
+         });
+
+         AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 50, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 2000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
          });
       </script>
    </body>
